@@ -2,6 +2,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -40,12 +42,11 @@ img {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.166;
     letter-spacing: 0.03em;
 }
 main {
     flex-grow: 1;
-    min-height: 100vh;
+    
 }
 .section {
     padding: 120px 0;
@@ -74,7 +75,6 @@ ul {
 
     align-items: center;
     border-bottom: 1px solid #e7e9fc;
-    align-items: baseline;
 }
 
 /* ===== NAV LINKS ===== */
@@ -163,7 +163,7 @@ h1 {
     gap: 24px;
 }
 
-.features h3 {
+.heading-box, .texting-box {
     font-size: 20px;
     color: #2e2f42;
     line-height: 1.2;
@@ -226,7 +226,7 @@ padding-bottom: 72px;
 .team-list {
     display: flex;
     justify-content: center;
-     gap: 24px;
+    gap: 24px;
 
 }
 
