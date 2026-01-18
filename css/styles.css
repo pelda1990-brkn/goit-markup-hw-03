@@ -12,12 +12,19 @@ body {
     font-size: 16px;
     color: #434455;
     background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex-grow: 1;
 }
 
 h1, h2 ,h3 ,h4 ,h5 ,h6 ,p {
     margin: 0;
     padding: 0;
 }
+
 /* ===== İMG ===== */
 
 img {
@@ -25,6 +32,17 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* ===== GLOBAL ===== */
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+
 
 /* ===== CONTAİNER ===== */
 
@@ -44,10 +62,8 @@ img {
     font-size: 18px;
     letter-spacing: 0.03em;
 }
-main {
-    flex-grow: 1;
-    
-}
+
+
 .section {
     padding: 120px 0;
 }
@@ -60,26 +76,22 @@ main {
     color: #2e2f42;
 }
 
-a {
-    text-decoration: none;
-
-}
-
-ul {
-    list-style: none;
-}
 .header-1 {
-    display: flex;
-    gap: 40px;
-    justify-content: space-evenly;
-
-    align-items: center;
     border-bottom: 1px solid #e7e9fc;
 }
 
-/* ===== NAV LINKS ===== */
+.header-1 .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-.nav-link-link {
+/* ===== NAV LINKS ===== */
+nav {
+    margin-right: auto;
+}
+
+.nav-list {
     display: flex;
     gap: 40px;
     justify-content: space-between;
@@ -97,18 +109,16 @@ ul {
     color: #404bbf;
 }
 
-.nav-list {
-    display: flex;
-    gap: 40px
+
+
+address a {
+    color: #434455;
 }
 
 .address {
     display: flex;
     gap: 40px;
     padding-right: 156px;
-}
-address a {
-    color: #434455;
 }
 
 h1 {
@@ -123,14 +133,6 @@ h1 {
     margin:0 auto 48px;
 }
 
-.header-1 {
-    border-bottom: 1px solid #e7e9fc;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-items: baseline;
-    gap: 40px;
-}
 
 
 
@@ -159,19 +161,26 @@ h1 {
 /* ===== FEATURES ===== */
 
 .features {
+    display: block;
+
+}
+.features-list {
     display: flex;
     gap: 24px;
 }
 
-.heading-box, .texting-box {
-    font-size: 20px;
-    color: #2e2f42;
-    line-height: 1.2;
-    font-weight: 500;
-    letter-spacing: 0.02em;
+.heading-box  {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 8px;
 
 }
 
+.texting-box {
+    text-align: center;
+    padding-bottom: 32px;
+
+}
 .features p,
 .features h3 {
     text-align: left;
@@ -186,22 +195,7 @@ h1 {
 }
 
 
-.features-list {
-        display: flex;
-        gap: 24px;
 
-}
-
-.heading {
-    text-align: center;
-    padding-top: 32px;
-    padding-bottom: 8px;
-}
-
-.texting {
-    text-align: center;
-    padding-bottom: 32px;
-}
 
 
 
@@ -284,7 +278,7 @@ padding-bottom: 72px;
 }
 
 .portfolio-box {
-    border: 0px solid #E7E9FC;
+    border: 1px solid #E7E9FC;
     background-color: #ffffff;
     width: 360px;
     height: auto;
@@ -321,7 +315,7 @@ footer p {
     color: #f4f4fd
 }
 .logo-1 {
-    font-family: "Raleway" sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.166;
