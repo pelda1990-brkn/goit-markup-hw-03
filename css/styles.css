@@ -118,7 +118,6 @@ address a {
 .address {
     display: flex;
     gap: 40px;
-    padding-right: 156px;
 }
 
 h1 {
@@ -232,6 +231,7 @@ padding-bottom: 72px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     background-color: white;
+    margin-bottom: 8px;
 }
 
 .team-card p {
@@ -250,6 +250,7 @@ padding-bottom: 72px;
     line-height: 1.2;
     color: #2e2f42;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .portfolio h2 {
@@ -282,6 +283,8 @@ padding-bottom: 72px;
     background-color: #ffffff;
     width: 360px;
     height: auto;
+    padding: 32px 16px;
+    border top: none;
 
 }
   /* ===== FOOTER ===== */
